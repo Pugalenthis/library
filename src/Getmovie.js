@@ -16,7 +16,7 @@ export function Getmovie() {
       mname: "mudhal ne mudivum nee",
       mposter: "https://i.ytimg.com/vi/sXUYrC5WgFI/maxresdefault.jpg",
       mrating: "8",
-      msummary: "One of the exceptional, outstanding movies of Hot Chocolate, Hot Shot, Actor Suriya (Younger Killer Looks). Court drama that is so thoroughly astonishing & engaging right from the start of the movie. Distinctively unique, even from the very first 5-10 minutes. Definitely from the lines of  I am getting used to the recent cinematic legal works such as Nerkonda Paarvai, Ponmagal Vandhal etc,",
+      msummary: "One of the exceptional, outstanding movies of Hot Chocolate, Hot Shot, Actor Suriya (Younger Killer Looks). Court drama that is so thoroughly astonishing & engaging right from the start of the movie. Distinctively unique, even from the very first 5-10 minutes. Definitely from the lines of  I am getting used to the recent cinematic legal works such as Nerkonda Paarvai, Ponmagal Vandhal etc the  pugalenthi,aravindhan,sekaran,chandra,",
     },
   ]
 
