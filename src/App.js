@@ -1,64 +1,60 @@
+import React from "react";
 import "./App.css";
-import { Link, Route, Switch } from "react-router-dom";
-import { Home } from "./Home";
-import { Projects } from "./Projects";
-import { Contacts } from "./Contacts";
-import { About } from "./About";
-import { Blog } from "./Blog";
-import { Getmovie } from "./Getmovie";
-import { Createmovie } from "./Createmovie";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import { Switch, Route, useHistory } from "react-router-dom";
+import { Home } from "./Components/Home";
+import { Addbook } from "./Components/Addbook";
+import { Createbooks } from "./Components/Createbook";
+import { Readbook } from "./Components/Readbook";
+import { Editbook } from "./Components/Editbook";
+
 
 function App() {
+  const history = useHistory();
   return (
-    <div className="App">
-      <ul>
-        <Link to="/home">Home</Link>
-      </ul>
-      <ul>
-        <Link to="/projects">Projects</Link>
-      </ul>
-      <ul>
-        <Link to="/blog">Blog</Link>
-      </ul>
-      <ul>
-        <Link to="/about">About</Link>
-      </ul>
-      <ul>
-        <Link to="/contacts">Contacts</Link>
-      </ul>
-      <ul>
-        <Link to="/getmovie">Getmovie</Link>
-      </ul>
+    <div>
+      ValidationTextFields
+      <div className="container">
+        <AppBar id="appbar-container">
+          <Toolbar>
+            <Button onClick={() => history.push("/")} color="inherit">
+              Home
+            </Button>
+            <Button onClick={() => history.push("/addbook")} color="inherit">
+              Add Book
+            </Button>
+            <Button onClick={() => history.push("/library")} color="inherit">
+              Library
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </div>
 
-      <Switch>
-        <Route path="/home">
-          <Home myname="pugal" />
-        </Route>
-        <Route path="/projects">
-          <Projects myname="pugal" />
-        </Route>
-        <Route path="/blog">
-          <Blog myname="pugal" />
-        </Route>
-
-        <Route path="/about">
-          <About myname="pugal" />
-        </Route>
-        <Route path="/contacts">
-          <Contacts myname="pugal" />
-          <Createmovie />
-        </Route>
-        <Route path="/getmovie">
-          <Getmovie />
+    
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/addbook">
+            <Addbook />
+          </Route>
+          <Route exact path="/library">
+            <Createbooks />
+          </Route>
+          <Route exact path="/addbook/read/:id">
+            <Readbook />
+          </Route>
+          <Route exact path="/addbook/edit/:id">
+            <Editbook />
+           
+          </Route>
         
-         
-        </Route>
-      </Switch>
-    </div>
+        </Switch>
+      </div>
+    
   );
 }
-
-
-
 
 export default App;

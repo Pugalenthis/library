@@ -1,0 +1,23 @@
+#addbook-container{
+    margin-top : 100px;
+}
+
+#getbook-column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.addbook-input{
+    width: 40%;
+    margin: 20px !important;
+}
+
+.addbook-button{
+    margin-top : 50px !important;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;   
+}
+

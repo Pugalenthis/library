@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+#home-container{
+  margin-top: 200px !important;
+  font-family: 'Inconsolata', monospace;}
+
+.card-title{
+  margin-bottom: 20px ;
+}
+#home-row{
+  justify-content: space-around;
+}
+
+.card{
+  width: 100% !important;
+  height: auto !important;
+}

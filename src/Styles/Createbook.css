@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+
+#note-container-fluid{
+    margin-top:100px !important;
+}
+#createbooks-container-fluid{
+    border: 20px  solid gray;
+    height: 240px;
+    
+}
+
+#container-fluid{
+    border: 20px  solid gray;
+    height: 240px;
+    
+}
+
+#note-edit-icon,#note-delete-icon{
+    margin: 0px 5px;
+}
+ 
+.book{
+    cursor: pointer;
+    margin-right: 10px;
+    width: 40px;
+    height: 200px;
+    background-color: #162520;
+    border: 1px solid black;
+    transform: rotate(-10deg);
+    writing-mode: vertical-lr;
+    font-size: 20px;
+    padding: 5px ;
+    letter-spacing: 3px;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+    border-radius: 5px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#book-column{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
